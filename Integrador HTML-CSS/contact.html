@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+        <!--Fuentes de google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Roboto+Slab&family=Montserrat&display=swap" rel="stylesheet">
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/8efff93c06.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body> 
+       <header>
+    <h1 class="titulo">MG Nails</h1>
+</header>
+<menu class="col-3 col-s-2">
+    <a href="index.html" class="item-menu">Home</a>
+    <a href="about.html" class="item-menu">Acerca</a>
+    <a href="contact.html" class="item-menu">Contacto</a>
+    <a href="galeria.html" class="item-menu">Galeria</a>
+    <a href="donde-comprar.html" class="item-menu">Donde Comprar</a>
+</menu>
+<main>
+    <div class="col-9 col-s-10">
+    <form action="show_data.html" target="_blank" class="flex-container">
+        <fieldset class="flex-campos">
+            <div>
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre" class="flex-item">
+            </div>
+            <div>
+                <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+            </div>
+            <div>
+                <input type="text" name="direccion" placeholder="Dirección">
+            </div>
+            <div>
+                <input type="text" name="ciudad" placeholder="Ciudad">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+        </fieldset>
+        <fieldset class="flex-campos">
+            <legend>Comentarios y Sugerencias</legend>
+            <textarea name="comentario" rows="10" cols="40"></textarea>
+            <label for="recibir_info">Deseo recibir mas información.</label>
+            <input type="checkbox" name="recibir_info" checked> 
+        </fieldset>
+        <div class="break"></div> <!--Corta la continuidad del flexbox-->
+        <div class="botones">
+            <input type="reset" value="Borrar" class="cancel">
+            <input type="submit" value="Aceptar" class="enviar">
+        </div>
+        </fieldset>
+    </form>
+</main>
+<footer class="col-12 col-s-12 pie">
+    <div class="soc-media">
+        <a href="https://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <i class="fas fa-share-alt"></i>
+    </div>
+    <p>derechos reservados @2021</p>
+</footer>
+</body>
+
+</html>

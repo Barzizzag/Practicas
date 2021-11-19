@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grilla{
+            display: grid;
+            background-color: royalblue;
+            height: 100vh;
+            grid-template-areas: "a a""c c""c c""b b""d d""e e";
+
+        }
+        @media only screen and (min-width:500px){
+            .grilla{
+                grid-template-areas:    "a a a a""b c c d""b c c d""b e e e";
+            }
+        }
+
+        .header{
+            grid-area: a; background: red;
+        }
+        .aside{
+            grid-area: b; background: beige;
+        }
+        .main{
+            grid-area: c; background: cadetblue;
+        }
+        .left{
+            grid-area: d; background: darkblue;
+        }
+        .footer{
+            grid-area: e; background:tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="grilla">
+        <header class="header"><h1>234</h1></header>
+        <aside class="aside">
+            <h1>aside</h1>
+            <a href="flex.html">Sera flex</a>
+        </aside>
+        <main class="main"><h1>main</h1></main>
+        <aside class="left"><h1>left</h1></aside>
+        <footer class="footer"><h1>footer</h1></footer>
+
+    </div>
+</body>
+</html>
