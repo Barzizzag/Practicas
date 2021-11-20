@@ -1,5 +1,5 @@
 #Ejercicio 1
-"""
+
 bandera=True
 while bandera:
     print("Opciones: \n 1-Nuevo \n 2-Editar \n 3-Borrar \n 4-Salir")
@@ -24,23 +24,30 @@ def menu():
     entrada=input("Ingrese una opcion: ")
     if entrada=="1":
         print("El ingreso es: Nuevo")
+        valor="1"
     elif entrada=="2":
         print("El ingreso es: Editar")
+        valor="2"
     elif entrada=="3":
         print("El ingreso es: Borrar")
+        valor="3"
     elif entrada=="4":
         print("El ingreso es: Salir")
-    if int(entrada) <=4:    
-        return False
+        valor="4"
     else:
-        return True
-while menu():
-    print("Opcion invalida")
+         valor=0
+    return valor
+    
+valor=0
+while valor==0:
+    valor=menu()
+    #print (valor)
 
 #Ejercicio 3
 
 def menu(diccionario): 
-    print("Opciones: \n N-Nuevo \n E-Editar \n B-Borrar \n S-Salir")
+    for key in diccionario:
+        print (key,"->", diccionario[key])
     key=input("Ingrese una opcion: ").upper()
     return key 
 
@@ -58,8 +65,9 @@ def salidaEnTupla():
     return (nombreEmpresa, nombreContacto, email)
 
 print(salidaEnTupla())
-"""
+
 #Ejercicio 5
+
 def bisiesto(fechaEnLista):
     dia=int(fechaEnLista[0])
     mes=int(fechaEnLista[1])
@@ -120,9 +128,8 @@ if len(fechaEnLista)==1:
 if bisiesto(fechaEnLista):
     print(fechas(fechaEnLista))
 
-"""
-#Ejercicio 6
 
+#Ejercicio 6
 
 product=["Samsung", "LA5890",12345,128]
 def producto(product):
@@ -157,4 +164,3 @@ def producto(lista):
         
 
 producto(lista)
-"""
